@@ -1,0 +1,6 @@
+<form><input name="y" placeholder="Your birth year" value="<%= params[:y] %>"></form>
+
+<% if params[:y] %>
+  <p>Your unique <i>secure</i> password is: <strong><%= @password %></strong></p>
+  <p>Now you can use this exact password on every site you visit. Enjoy! P.S. it's very secure because it's generated.</p>
+<% end %>
